@@ -37,7 +37,7 @@ export function ResiCommSplit() {
                 : hoveredPanel === 'commercial'
                 ? 'lg:flex-[0.7]'
                 : 'lg:flex-1'
-            } min-h-[420px] lg:min-h-0 flex flex-col justify-end p-8 sm:p-12`}
+            } min-h-[360px] sm:min-h-[420px] lg:min-h-0 flex flex-col justify-end p-6 sm:p-8 md:p-10 lg:p-12`}
           >
             <Image
               src="/images/projects/the-dining-salone-main-1600.webp"
@@ -54,7 +54,7 @@ export function ResiCommSplit() {
                 <span className="text-gold">· 15 Chapters</span>
               </div>
 
-              <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-light leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-light leading-tight">
                 Living Spaces Built For{' '}
                 <span className="font-normal italic text-gold-gradient block">Generations</span>
               </h3>
@@ -67,7 +67,7 @@ export function ResiCommSplit() {
               <div className="pt-2">
                 <Link
                   href="/portfolio?category=residential"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold text-espresso font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-gold-light transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold text-espresso font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-gold-light transition-colors min-h-[44px]"
                 >
                   <span>Explore Residential</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -86,7 +86,7 @@ export function ResiCommSplit() {
                 : hoveredPanel === 'residential'
                 ? 'lg:flex-[0.7]'
                 : 'lg:flex-1'
-            } min-h-[420px] lg:min-h-0 flex flex-col justify-end p-8 sm:p-12`}
+            } min-h-[360px] sm:min-h-[420px] lg:min-h-0 flex flex-col justify-end p-6 sm:p-8 md:p-10 lg:p-12`}
           >
             <Image
               src="/images/projects/commercial-kafe-exterior-dusk-1600.webp"
@@ -103,7 +103,7 @@ export function ResiCommSplit() {
                 <span className="text-gold">· Turnkey Destinations</span>
               </div>
 
-              <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-light leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-light leading-tight">
                 Hospitality &amp; Retail That{' '}
                 <span className="font-normal italic text-gold-gradient block">Captivates</span>
               </h3>
@@ -116,7 +116,7 @@ export function ResiCommSplit() {
               <div className="pt-2">
                 <Link
                   href="/portfolio?category=commercial"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold text-espresso font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-gold-light transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold text-espresso font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-gold-light transition-colors min-h-[44px]"
                 >
                   <span>Explore Commercial</span>
                   <ArrowUpRight className="w-4 h-4" />

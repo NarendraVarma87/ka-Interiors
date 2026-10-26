@@ -87,22 +87,22 @@ export default async function ChapterPage({ params }: PageProps) {
             <span>{project.category} Architecture</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-ink leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-ink leading-tight">
             {project.title.split(' ')[0]}{' '}
             <span className="font-normal italic text-gold-gradient">
               {project.title.split(' ').slice(1).join(' ')}
             </span>
           </h1>
 
-          <p className="font-serif text-xl sm:text-2xl text-walnut/90 italic font-normal leading-relaxed">
+          <p className="font-serif text-lg sm:text-xl lg:text-2xl text-walnut/90 italic font-normal leading-relaxed">
             &ldquo;{project.tagline}&rdquo;
           </p>
         </div>
       </div>
 
       {/* Hero Cover Image */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 sm:mb-24">
-        <div className="relative aspect-[16/9] sm:aspect-[21/9] rounded-3xl overflow-hidden border border-gold/30 shadow-2xl bg-espresso">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
+        <div className="relative aspect-[16/10] sm:aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden border border-gold/30 shadow-2xl bg-espresso">
           <Image
             src={project.coverImage}
             alt={project.coverAlt}

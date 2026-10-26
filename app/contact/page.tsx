@@ -25,13 +25,13 @@ export default function ContactPage() {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Connect with the Studio</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-ink leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-ink leading-tight">
             Consult With Our{' '}
             <span className="font-normal italic text-gold-gradient block sm:inline">
               Principal Designers
             </span>
           </h1>
-          <p className="font-sans text-sm sm:text-base text-walnut/80 leading-relaxed max-w-2xl">
+          <p className="font-sans text-xs sm:text-sm lg:text-base text-walnut/80 leading-relaxed max-w-2xl">
             Whether you are commissioning a new private residence, a tranquil mandir sanctuary,
             or an iconic commercial dining destination, we welcome your inquiry.
           </p>

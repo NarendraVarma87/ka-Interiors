@@ -44,13 +44,13 @@ export default function ServicesPage() {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Comprehensive Architectural Services</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-ink leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-ink leading-tight">
             The 3D Visualization{' '}
             <span className="font-normal italic text-gold-gradient block sm:inline">
               Suite &amp; Process
             </span>
           </h1>
-          <p className="font-sans text-sm sm:text-base text-walnut/80 leading-relaxed max-w-2xl">
+          <p className="font-sans text-xs sm:text-sm lg:text-base text-walnut/80 leading-relaxed max-w-2xl">
             Experience your space with total photorealistic clarity before ground is broken.
             Our comprehensive 7-stage 3D suite and 6-phase turnkey methodology eliminate guesswork
             and guarantee absolute architectural perfection.

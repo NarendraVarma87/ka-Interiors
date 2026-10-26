@@ -71,10 +71,10 @@ export function CommercialShowcase() {
             </AnimatePresence>
 
             {/* Day / Dusk Toggle Control */}
-            <div className="absolute top-6 right-6 z-20 flex items-center p-1 rounded-full bg-espresso/85 backdrop-blur-md border border-gold/40 shadow-lg">
+            <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 flex items-center p-1 rounded-full bg-espresso/85 backdrop-blur-md border border-gold/40 shadow-lg">
               <button
                 onClick={() => setIsDusk(false)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-sans font-medium transition-all ${
+                className={`flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-sans font-medium transition-all ${
                   !isDusk
                     ? 'bg-gold text-espresso shadow'
                     : 'text-champagne/70 hover:text-white'
@@ -86,7 +86,7 @@ export function CommercialShowcase() {
               </button>
               <button
                 onClick={() => setIsDusk(true)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-sans font-medium transition-all ${
+                className={`flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-sans font-medium transition-all ${
                   isDusk
                     ? 'bg-gold text-espresso shadow'
                     : 'text-champagne/70 hover:text-white'
@@ -99,14 +99,14 @@ export function CommercialShowcase() {
             </div>
 
             {/* Bottom Caption on Main Image */}
-            <div className="absolute bottom-6 left-6 right-6 z-20 space-y-1">
+            <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 z-20 space-y-1">
               <span className="text-[10px] uppercase tracking-[0.25em] text-gold font-sans font-semibold">
                 Façade Architecture
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl text-white">
+              <h3 className="font-serif text-lg sm:text-2xl md:text-3xl text-white">
                 Exterior Envelope &amp; Cantilevered Volumes
               </h3>
-              <p className="font-sans text-xs text-champagne/85">
+              <p className="font-sans text-[11px] sm:text-xs text-champagne/85 line-clamp-2 sm:line-clamp-none">
                 {isDusk
                   ? 'Warm architectural sconces cast gentle luminescence across the vertical timbers at twilight.'
                   : 'Sunlight streams through the high-performance glass facade, illuminating internal greenery.'}

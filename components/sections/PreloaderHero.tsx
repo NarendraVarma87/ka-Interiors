@@ -111,22 +111,22 @@ export function PreloaderHero() {
         {/* Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col justify-between min-h-[82svh] pt-12 sm:pt-16">
           {/* Top Eyebrow & 30+ Years Heritage Badge */}
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-espresso/80 backdrop-blur-md border border-gold/30 text-champagne text-xs font-sans tracking-[0.2em] uppercase"
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-espresso/80 backdrop-blur-md border border-gold/30 text-champagne text-[11px] sm:text-xs font-sans tracking-[0.16em] sm:tracking-[0.2em] uppercase"
             >
-              <Sparkles className="w-3.5 h-3.5 text-gold" />
-              <span>Bespoke Residential & Commercial Architecture</span>
+              <Sparkles className="w-3.5 h-3.5 text-gold shrink-0" />
+              <span>Residential &amp; Commercial Architecture</span>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-walnut/70 backdrop-blur-md border border-gold/40 text-gold text-xs font-sans tracking-wider"
+              className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-walnut/70 backdrop-blur-md border border-gold/40 text-gold text-[11px] sm:text-xs font-sans tracking-wider"
             >
               <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
               <span className="font-semibold">{BRAND_DATA.stats.experience}</span>
@@ -135,12 +135,12 @@ export function PreloaderHero() {
           </div>
 
           {/* Main Giant Headline & Subline */}
-          <div className="my-auto py-12 max-w-4xl">
+          <div className="my-auto py-8 sm:py-12 max-w-4xl">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="font-serif text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-light tracking-tight text-white leading-[1.02]"
+              className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light tracking-tight text-white leading-[1.05]"
             >
               Interiors{' '}
               <span className="font-normal italic text-gold-gradient block sm:inline">
@@ -152,7 +152,7 @@ export function PreloaderHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="mt-6 sm:mt-8 font-sans text-base sm:text-lg lg:text-xl text-champagne/90 font-light max-w-2xl leading-relaxed"
+              className="mt-4 sm:mt-6 lg:mt-8 font-sans text-sm sm:text-base lg:text-xl text-champagne/90 font-light max-w-2xl leading-relaxed"
             >
               Luxury residential & commercial interior design studio delivering bespoke spaces
               with three decades of master craftsmanship, from concept to turnkey handover.
@@ -163,11 +163,11 @@ export function PreloaderHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-8 sm:mt-10 flex flex-wrap items-center gap-4 sm:gap-6"
+              className="mt-6 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6"
             >
               <Link
                 href="/contact"
-                className="group relative inline-flex items-center justify-center px-7 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs sm:text-sm font-medium uppercase tracking-[0.22em] text-espresso bg-gold border border-gold hover:bg-espresso hover:text-champagne transition-all duration-300 shadow-lg glow-gold-sm"
+                className="group relative inline-flex items-center justify-center px-7 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs sm:text-sm font-medium uppercase tracking-[0.22em] text-espresso bg-gold border border-gold hover:bg-espresso hover:text-champagne transition-all duration-300 shadow-lg glow-gold-sm min-h-[48px]"
               >
                 <span>Book a Consultation</span>
                 <ArrowUpRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -175,7 +175,7 @@ export function PreloaderHero() {
 
               <Link
                 href="/portfolio"
-                className="group inline-flex items-center gap-2 px-6 py-3.5 text-xs sm:text-sm font-sans tracking-[0.2em] uppercase text-champagne/90 hover:text-white transition-colors duration-200"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-sans tracking-[0.2em] uppercase text-champagne/90 hover:text-white transition-colors duration-200 min-h-[44px]"
               >
                 <span className="border-b border-gold/40 group-hover:border-gold pb-0.5 transition-colors">
                   Explore Our Work

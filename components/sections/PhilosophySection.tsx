@@ -34,7 +34,7 @@ export function PhilosophySection() {
     <section
       id="philosophy"
       ref={containerRef}
-      className="relative bg-ivory text-ink py-24 sm:py-32 lg:py-40 border-b border-gold/15 overflow-hidden"
+      className="relative bg-ivory text-ink py-16 sm:py-24 lg:py-36 border-b border-gold/15 overflow-hidden"
     >
       {/* Background delicate decorative watermark */}
       <div className="absolute right-[-10%] top-[20%] text-[24vw] font-serif font-light text-alabaster select-none pointer-events-none -z-0 opacity-40">
@@ -42,14 +42,14 @@ export function PhilosophySection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20">
           {/* Left Column: Sticky Heading + Animated Counter */}
-          <div className="lg:col-span-5 lg:sticky lg:top-32 self-start space-y-8">
-            <div className="space-y-3">
-              <span className="text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
+          <div className="lg:col-span-5 lg:sticky lg:top-32 self-start space-y-6 sm:space-y-8">
+            <div className="space-y-2 sm:space-y-3">
+              <span className="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
                 Studio Philosophy
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-ink leading-[1.08]">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-ink leading-[1.1]">
                 We design{' '}
                 <span className="font-normal italic text-gold-gradient block">
                   before we build.
@@ -63,13 +63,13 @@ export function PhilosophySection() {
             </p>
 
             {/* Heritage Counter Card */}
-            <div className="p-6 sm:p-8 rounded-2xl bg-alabaster/70 border border-gold/20 shadow-sm relative overflow-hidden group">
+            <div className="p-5 sm:p-7 md:p-8 rounded-2xl bg-alabaster/70 border border-gold/20 shadow-sm relative overflow-hidden group">
               <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-gold/10 blur-xl group-hover:bg-gold/20 transition-all duration-500" />
               <div className="flex items-baseline gap-2">
-                <span className="font-serif text-5xl sm:text-6xl font-medium text-espresso">
+                <span className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium text-espresso">
                   30+
                 </span>
-                <span className="font-serif text-2xl text-gold italic">Years</span>
+                <span className="font-serif text-xl sm:text-2xl text-gold italic">Years</span>
               </div>
               <h3 className="font-sans text-xs uppercase tracking-[0.2em] text-walnut/90 font-semibold mt-2">
                 Architectural & Interior Heritage
@@ -82,13 +82,13 @@ export function PhilosophySection() {
           </div>
 
           {/* Right Column: Scroll-Linked Word Reveal & Editorial Manifesto */}
-          <div className="lg:col-span-7 space-y-12 sm:space-y-16">
+          <div className="lg:col-span-7 space-y-8 sm:space-y-12 lg:space-y-16">
             {/* Word by Word Scroll Linked Opacity Reveal */}
-            <div className="p-8 sm:p-12 rounded-3xl bg-espresso text-ivory bg-grain shadow-xl border border-gold/20 relative">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-champagne/70 font-sans block mb-6">
+            <div className="p-6 sm:p-10 md:p-12 rounded-3xl bg-espresso text-ivory bg-grain shadow-xl border border-gold/20 relative">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-champagne/70 font-sans block mb-4 sm:mb-6">
                 The Guiding Principle
               </span>
-              <p className="font-serif text-2xl sm:text-3xl lg:text-4xl text-alabaster font-light leading-snug">
+              <p className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-alabaster font-light leading-snug">
                 {words.map((word, i) => {
                   const start = i / words.length;
                   const end = start + 1 / words.length;

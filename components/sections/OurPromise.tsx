@@ -60,16 +60,16 @@ export function OurPromise() {
         {/* Vertical Timeline */}
         <div className="relative max-w-4xl mx-auto">
           {/* Background Track Line */}
-          <div className="absolute left-6 sm:left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-alabaster/80" />
+          <div className="absolute left-5 sm:left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-alabaster/80" />
 
           {/* Animated Gold Fill Line */}
           <motion.div
             style={{ height: lineHeight }}
-            className="absolute left-6 sm:left-1/2 top-0 w-[2px] -translate-x-1/2 bg-gradient-to-b from-gold-light via-gold to-gold-dark shadow-[0_0_8px_rgba(201,149,60,0.5)] origin-top"
+            className="absolute left-5 sm:left-1/2 top-0 w-[2px] -translate-x-1/2 bg-gradient-to-b from-gold-light via-gold to-gold-dark shadow-[0_0_8px_rgba(201,149,60,0.5)] origin-top"
           />
 
           {/* 8 Promise Items */}
-          <div className="space-y-12 sm:space-y-16">
+          <div className="space-y-8 sm:space-y-16">
             {BRAND_DATA.promises.map((promise, idx) => {
               const Icon = ICON_MAP[idx] || Sparkles;
               const isEven = idx % 2 === 1;
@@ -77,35 +77,35 @@ export function OurPromise() {
               return (
                 <div
                   key={promise.id}
-                  className={`relative flex items-start gap-8 sm:gap-12 ${
+                  className={`relative flex items-start gap-4 sm:gap-12 ${
                     isEven ? 'sm:flex-row-reverse' : ''
                   }`}
                 >
                   {/* Central Circular Icon Badge */}
-                  <div className="absolute left-6 sm:left-1/2 -translate-x-1/2 z-10 w-12 h-12 rounded-full bg-espresso border-2 border-gold flex items-center justify-center shadow-lg group">
-                    <Icon className="w-5 h-5 text-gold group-hover:scale-110 transition-transform duration-200" />
+                  <div className="absolute left-5 sm:left-1/2 -translate-x-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-espresso border-2 border-gold flex items-center justify-center shadow-lg group">
+                    <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-gold group-hover:scale-110 transition-transform duration-200" />
                   </div>
 
                   {/* Content Card */}
                   <div
-                    className={`ml-16 sm:ml-0 sm:w-1/2 ${
-                      isEven ? 'sm:pr-16 sm:text-right' : 'sm:pl-16 sm:text-left'
+                    className={`ml-12 sm:ml-0 sm:w-1/2 ${
+                      isEven ? 'sm:pr-12 md:pr-16 sm:text-right' : 'sm:pl-12 md:pl-16 sm:text-left'
                     }`}
                   >
-                    <div className="p-6 sm:p-7 rounded-2xl bg-alabaster/70 border border-gold/20 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="p-4 sm:p-6 md:p-7 rounded-2xl bg-alabaster/70 border border-gold/20 shadow-sm hover:shadow-md transition-shadow">
                       <div
-                        className={`flex items-baseline gap-2 mb-2 ${
+                        className={`flex items-baseline gap-2 mb-1.5 ${
                           isEven ? 'sm:justify-end' : ''
                         }`}
                       >
-                        <span className="font-sans text-xs font-semibold tracking-widest text-gold uppercase">
+                        <span className="font-sans text-[10px] sm:text-xs font-semibold tracking-widest text-gold uppercase">
                           Promise {promise.number}
                         </span>
                       </div>
-                      <h3 className="font-serif text-xl sm:text-2xl text-ink font-medium leading-snug">
+                      <h3 className="font-serif text-lg sm:text-xl lg:text-2xl text-ink font-medium leading-snug">
                         {promise.title}
                       </h3>
-                      <p className="font-sans text-xs sm:text-sm text-walnut/80 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs sm:text-sm text-walnut/80 mt-1.5 leading-relaxed">
                         {promise.descriptor}
                       </p>
                     </div>

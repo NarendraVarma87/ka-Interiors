@@ -14,19 +14,19 @@ export function Experience3DSuite() {
   const activeService = BRAND_DATA.visualizationSuite[activeIndex];
 
   return (
-    <section className="relative bg-espresso text-ivory py-24 sm:py-32 border-b border-gold/15 bg-grain overflow-hidden">
+    <section className="relative bg-espresso text-ivory py-16 sm:py-24 lg:py-32 border-b border-gold/15 bg-grain overflow-hidden">
       {/* Warm ambient backlight */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-radial from-gold/15 to-transparent blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 sm:pb-16 border-b border-gold/15">
-          <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 sm:pb-12 lg:pb-16 border-b border-gold/15">
+          <div className="space-y-2 sm:space-y-3">
+            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Photorealistic Pre-Construction</span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white leading-tight">
               The KA{' '}
               <span className="font-normal italic text-gold-gradient">
                 Visualization Suite
@@ -34,7 +34,7 @@ export function Experience3DSuite() {
             </h2>
           </div>
 
-          <p className="font-sans text-sm sm:text-base text-champagne/80 max-w-md leading-relaxed">
+          <p className="font-sans text-xs sm:text-sm lg:text-base text-champagne/80 max-w-md leading-relaxed">
             Experience your home or commercial flagship before ground is broken.
             Our comprehensive 7-stage 3D visualization ensures total aesthetic alignment and zero surprises.
           </p>

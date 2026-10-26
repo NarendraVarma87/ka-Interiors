@@ -63,21 +63,21 @@ export function FinalCTA() {
   return (
     <section
       id="enquiry"
-      className="relative bg-espresso text-ivory py-24 sm:py-36 border-b border-gold/15 bg-grain overflow-hidden"
+      className="relative bg-espresso text-ivory py-16 sm:py-24 lg:py-36 border-b border-gold/15 bg-grain overflow-hidden"
     >
       {/* Background ambient warm backlight */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial from-gold/15 via-espresso/50 to-espresso pointer-events-none blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* Left Column: Editorial Call to Action */}
-          <div className="lg:col-span-5 space-y-8">
-            <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+            <div className="space-y-2 sm:space-y-3">
+              <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Begin Your Journey</span>
               </div>
-              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white leading-tight">
                 Let&apos;s Build Your{' '}
                 <span className="font-normal italic text-gold-gradient block">
                   Dream Space Together.
@@ -148,7 +148,7 @@ export function FinalCTA() {
 
           {/* Right Column: Interactive Consultation Form */}
           <div className="lg:col-span-7">
-            <div className="p-8 sm:p-12 rounded-3xl bg-walnut/80 border border-gold/30 shadow-2xl relative">
+            <div className="p-5 sm:p-8 md:p-10 lg:p-12 rounded-3xl bg-walnut/80 border border-gold/30 shadow-2xl relative">
               {submitSuccess ? (
                 <div className="py-12 text-center space-y-6">
                   <div className="w-16 h-16 rounded-full bg-gold/20 border border-gold flex items-center justify-center mx-auto text-gold">

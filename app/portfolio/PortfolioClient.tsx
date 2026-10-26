@@ -42,20 +42,20 @@ export function PortfolioClient({ initialCategory = 'all' }: { initialCategory?:
             <Sparkles className="w-3.5 h-3.5" />
             <span>Complete Architectural Anthology</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-ink leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-ink leading-tight">
             Curated{' '}
             <span className="font-normal italic text-gold-gradient">Portfolio</span>
           </h1>
-          <p className="font-sans text-sm sm:text-base text-walnut/80 leading-relaxed max-w-2xl">
+          <p className="font-sans text-xs sm:text-sm lg:text-base text-walnut/80 leading-relaxed max-w-2xl">
             Explore 16 bespoke architectural chapters, from sacred mandir sanctuaries and sculpted relief walls
             to our two-level commercial flagship. Every space is rendered with millimeter fidelity before execution.
           </p>
         </div>
 
         {/* Filter Controls Bar */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-gold/15 mb-12">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 pb-6 sm:pb-8 border-b border-gold/15 mb-8 sm:mb-12">
           {/* Category Tabs */}
-          <div className="flex items-center gap-2" role="tablist" aria-label="Portfolio Categories">
+          <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Portfolio Categories">
             {(['all', 'residential', 'commercial'] as ProjectCategory[]).map((cat) => {
               const isActive = selectedCategory === cat;
               const count =

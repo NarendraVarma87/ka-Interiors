@@ -86,26 +86,26 @@ export function Header() {
           {/* Logo Brand Link */}
           <Link
             href="/"
-            className="group flex items-center gap-3.5 transition-transform duration-300 hover:scale-[1.01]"
+            className="group flex items-center gap-2.5 sm:gap-3.5 transition-transform duration-300 hover:scale-[1.01]"
             aria-label="KA Interiors Homepage"
           >
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full p-1 bg-espresso/80 border border-gold/40 flex items-center justify-center shadow-sm">
+            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full p-1 bg-espresso/80 border border-gold/40 flex items-center justify-center shadow-sm shrink-0">
               <Image
                 src="/images/brand/ka-phoenix-monogram.png"
                 alt="KA Interiors Phoenix Monogram"
-                width={38}
-                height={38}
+                width={34}
+                height={34}
                 className="object-contain transition-transform duration-500 group-hover:rotate-6"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className={`font-serif text-xl sm:text-2xl tracking-wider font-medium leading-none ${
+              <span className={`font-serif text-lg sm:text-2xl tracking-wider font-medium leading-none ${
                 isTransparentHero ? 'text-white' : 'text-ink'
               }`}>
                 KA <span className="text-gold-gradient font-normal italic">Interiors</span>
               </span>
-              <span className={`text-[9px] uppercase tracking-[0.25em] font-sans mt-0.5 ${
+              <span className={`text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-sans mt-0.5 ${
                 isTransparentHero ? 'text-champagne/80' : 'text-walnut/70'
               }`}>
                 Vijayawada · Est. 30+ Yrs
@@ -114,7 +114,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10" aria-label="Main Navigation">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-8 xl:gap-10" aria-label="Main Navigation">
             {NAV_LINKS.map((item) => {
               const active = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
               return (

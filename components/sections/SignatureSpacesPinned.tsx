@@ -5,13 +5,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PROJECTS } from '@/data/projects';
 
 export function SignatureSpacesPinned() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [isDesktop, setIsDesktop] = useState(false);
+
+  const scrollMobile = (direction: 'left' | 'right') => {
+    if (!trackRef.current) return;
+    const offset = direction === 'left' ? -320 : 320;
+    trackRef.current.scrollBy({ left: offset, behavior: 'smooth' });
+  };
 
   // Filter curated signature chapters for horizontal showcase
   const signatureChapters = PROJECTS.filter((p) => p.featuredOnHome);
@@ -78,10 +84,10 @@ export function SignatureSpacesPinned() {
       }`}
     >
       {/* Top Header Row */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-8 lg:mb-10 shrink-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-6 sm:mb-8 lg:mb-10 shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
+            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Curated Portfolio</span>
             </div>
@@ -90,7 +96,27 @@ export function SignatureSpacesPinned() {
             </h2>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
+            {/* Mobile/Tablet Swipe Nav Buttons */}
+            {!isDesktop && (
+              <div className="flex items-center gap-2 lg:hidden">
+                <button
+                  onClick={() => scrollMobile('left')}
+                  className="w-9 h-9 rounded-full border border-gold/30 bg-white/80 flex items-center justify-center text-espresso hover:bg-gold hover:text-white transition-colors"
+                  aria-label="Previous chapters"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => scrollMobile('right')}
+                  className="w-9 h-9 rounded-full border border-gold/30 bg-white/80 flex items-center justify-center text-espresso hover:bg-gold hover:text-white transition-colors"
+                  aria-label="Next chapters"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            )}
+
             <p className="hidden md:block font-sans text-xs text-walnut/70 uppercase tracking-widest">
               {isDesktop ? 'Scroll down to travel horizontally' : 'Swipe left to view chapters'}
             </p>
@@ -98,7 +124,7 @@ export function SignatureSpacesPinned() {
               href="/portfolio"
               className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.2em] font-sans font-semibold text-espresso hover:text-gold transition-colors"
             >
-              <span>View All Chapters</span>
+              <span>View All</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-gold" />
             </Link>
           </div>
@@ -111,15 +137,15 @@ export function SignatureSpacesPinned() {
         data-lenis-prevent={!isDesktop ? "true" : undefined}
         className={`${
           isDesktop
-            ? 'flex gap-8 px-8 sm:px-16 w-max will-change-transform'
-            : 'flex gap-6 px-4 sm:px-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-6'
+            ? 'flex gap-6 lg:gap-8 px-6 lg:px-16 w-max will-change-transform'
+            : 'flex gap-4 sm:gap-6 px-4 sm:px-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-6'
         }`}
       >
         {signatureChapters.map((chapter) => (
           <div
             key={chapter.slug}
             className={`group relative shrink-0 snap-center rounded-3xl overflow-hidden bg-white border border-gold/20 shadow-lg hover:shadow-2xl transition-all duration-500 ${
-              isDesktop ? 'w-[420px] lg:w-[480px]' : 'w-[84vw] sm:w-[380px]'
+              isDesktop ? 'w-[380px] lg:w-[440px] xl:w-[480px]' : 'w-[82vw] sm:w-[360px] md:w-[380px]'
             }`}
             data-cursor-text="VIEW"
           >

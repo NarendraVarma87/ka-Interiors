@@ -20,15 +20,15 @@ export function ChapterGallery({ gallery, title }: { gallery: ProjectImage[]; ti
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
         {gallery.map((img, idx) => (
           <div
             key={idx}
             onClick={() => setActiveImageIndex(idx)}
-            className={`group relative rounded-3xl overflow-hidden bg-espresso border border-gold/20 shadow-lg cursor-pointer ${
-              img.ratio === '16:9' ? 'md:col-span-2 aspect-[16/9]' : 'aspect-[4/3] sm:aspect-[4/5]'
+            className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden bg-espresso border border-gold/20 shadow-lg cursor-pointer ${
+              img.ratio === '16:9' ? 'md:col-span-2 aspect-[16/10] sm:aspect-[16/9]' : 'aspect-[4/3] sm:aspect-[4/5]'
             }`}
           >
             <Image
@@ -41,13 +41,13 @@ export function ChapterGallery({ gallery, title }: { gallery: ProjectImage[]; ti
             <div className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
             {/* Hover expand icon */}
-            <div className="absolute top-4 right-4 p-2.5 rounded-full bg-espresso/80 backdrop-blur-md border border-gold/30 text-champagne group-hover:text-white group-hover:border-gold transition-all opacity-0 group-hover:opacity-100">
-              <Maximize2 className="w-4 h-4" />
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 p-2 sm:p-2.5 rounded-full bg-espresso/80 backdrop-blur-md border border-gold/30 text-champagne group-hover:text-white group-hover:border-gold transition-all opacity-0 group-hover:opacity-100">
+              <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </div>
 
             {/* Caption */}
             {img.caption && (
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-espresso/80 backdrop-blur-md border border-gold/20">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-3 sm:p-4 rounded-xl bg-espresso/80 backdrop-blur-md border border-gold/20">
                 <p className="font-sans text-xs text-champagne/90 leading-relaxed">
                   {img.caption}
                 </p>
