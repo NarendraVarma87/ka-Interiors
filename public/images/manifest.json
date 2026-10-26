@@ -1,0 +1,362 @@
+{
+  "brand/brand-cover-hero": {
+    "src": "/images/brand/brand-cover-hero-1600.webp",
+    "src800": "/images/brand/brand-cover-hero-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoYABAAPtFUo0uoJKMhsAgBABoJYgCdMoABi6iyBJDF/LYAAP7Zd2tj92rqfBAwnmB3RTLcGogo0Uqih5NLf+uCM/g3Reg5G2ChBGQ21JwLXpOVwRH/mMfrVul0MCQazqlwAA==",
+    "width": 1600,
+    "height": 1067,
+    "aspectRatio": 1.5
+  },
+  "materials/fluted-walnut": {
+    "src": "/images/materials/fluted-walnut-1600.webp",
+    "src800": "/images/materials/fluted-walnut-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwBACdASoRABgAPtFUpk2oJCOiMBgIAQAaCWUAAC6Ny68BiTsfgrVgvTRUAAD+8hJcrbE3JiqkEqWvMzZ/8a7pEsV5keolfq026yKoGfW/GKSemAB7ZDRBMAA=",
+    "width": 560,
+    "height": 800,
+    "aspectRatio": 0.7
+  },
+  "materials/antique-brass": {
+    "src": "/images/materials/antique-brass-1600.webp",
+    "src800": "/images/materials/antique-brass-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoRABgAPtFapU0oJSOiMBgIAQAaCUAYG4HpG+WUfC7zayL9NmZAAP7zmsmUxnfIhNQCoxcCIUHK6HQtxMPKrGtH+6PMs3KRdwLLM3c1vwEvc3ePHG0CBBBnNavKaAAA",
+    "width": 560,
+    "height": 800,
+    "aspectRatio": 0.7
+  },
+  "materials/indian-quartzite": {
+    "src": "/images/materials/indian-quartzite-1600.webp",
+    "src800": "/images/materials/indian-quartzite-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQBACdASoRABgAPtFYpk2oJKOiMBgIAQAaCWcAy6QVRJt980mw0l3y/n54AP7w03q92/nIpmZu+M5k2Nk773SDMeZ+uuESu1GUr+nyp8FuHscAAAA=",
+    "width": 560,
+    "height": 800,
+    "aspectRatio": 0.7
+  },
+  "materials/premium-fabric": {
+    "src": "/images/materials/premium-fabric-1600.webp",
+    "src800": "/images/materials/premium-fabric-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAwCdASoRABgAPtFapk0oJSOiMBgIAQAaCWcAwcwQ78FLB4V+sEAA/vTOFcYvioGtjipqOMg/ezhPq1bCaPhDwuAAAA==",
+    "width": 560,
+    "height": 800,
+    "aspectRatio": 0.7
+  },
+  "projects/grand-foyer-main": {
+    "src": "/images/projects/grand-foyer-main-1600.webp",
+    "src800": "/images/projects/grand-foyer-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoYAAwAPtFUo0uoJKMhsAgBABoJQBOgAxux2dFgHopo/QAA3mZiCLYojOk5R5xQbh7z2MNsiILXH8S5Asly7hRVVQ2Hs1FyfLccc5GBblbydQqQ5hfszT7ELZJw4P6KX45/x5E9oO6W/jsDPI18r1oq/MXhkdsRVYfpy+eGg1E3nIAA",
+    "width": 1600,
+    "height": 789,
+    "aspectRatio": 2.028
+  },
+  "projects/grand-foyer-staircase": {
+    "src": "/images/projects/grand-foyer-staircase-1600.webp",
+    "src800": "/images/projects/grand-foyer-staircase-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAADQBQCdASoXABgAPtFeo06oJSKiKAqpABoJYgCdMswBt7vNd5Wm8IkAdLmC3ZMZQ/TPYHscJSyQAP463rSX6pyy4/f/DG5SVQcCfQMBMi2gTTuQ1//MoYOew1iw39PBqWYF3gR2g1mfB39GNL4pfmU2lGNsrw0eJmxPqWAubh+lWq+JAxLhnA/j6LmEBde2BBg63y89u/juIGmWRfTh+cROaADLUCOr7xgcH0rMTNw5OT70fsdO4kb4ZLzkmsuVicgFm/XzDmnbzhSCRf3zrIl0vSGbadWXw/PNFzSagAVDnvBgomNN5xOIAAA=",
+    "width": 1532,
+    "height": 1600,
+    "aspectRatio": 0.958
+  },
+  "projects/salone-main": {
+    "src": "/images/projects/salone-main-1600.webp",
+    "src800": "/images/projects/salone-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQBACdASoYAA0APtFUo0uoJKMhsAgBABoJYgCdMoMjbEt+ODMmV5Q5gK8A4oAA/udXCXLajpsR0zu9FcDUNNz38PQu5SB9dHXAwo+vWlOCJs9Jkjd/VwtbrQaXupELRZyF/W/bc952PkEfZz9Jv+4Tk0KjkXkw2H409os9DgzZyhf1vixBuSr9CCanDaSa/BWYAA==",
+    "width": 1600,
+    "height": 833,
+    "aspectRatio": 1.921
+  },
+  "projects/salone-daybed": {
+    "src": "/images/projects/salone-daybed-1600.webp",
+    "src800": "/images/projects/salone-daybed-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAABwBQCdASoYABUAPtFgqE+oJSOiKAgBABoJQBadAiFxxFk/IedgaA+wBMulVVGJBK4aWJqAAP7EVQJVgGQFczWOZNCDW73QtgJkZlCkQBmz4pZU5cLOqR8n0oqBYd3xtUuBhE9bxfz3lMuvsMJgniKWQbk1pfu36INSmB3t/O8qSv6phdFbsR+T5JiF6gBSkyyQckemdCGaHSPJ6xJBdQUIxXI6pfZinnjfNinJ6e49eTSltrl4qWTtNV22VSfoo41Z160WxBj2SDX9hFn4y7xzJKfZNbn4QVcGTPB1DWAAAA==",
+    "width": 1600,
+    "height": 1412,
+    "aspectRatio": 1.133
+  },
+  "projects/the-lounge-main": {
+    "src": "/images/projects/the-lounge-main-1600.webp",
+    "src800": "/images/projects/the-lounge-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoYAAYAPtFUo0uoJKMhsAgBABoJQBOmUABio8p251vyHECgAP5nJuP9g2ekeLZ1g3i2e1ftALs1R0oZlc+N2e6qu9fhf6RRMiIiZJV0xPHZjDX5v/FX/542emIYrygBDJVuRHF5AAA=",
+    "width": 1600,
+    "height": 422,
+    "aspectRatio": 3.791
+  },
+  "projects/sanctuary-living-main": {
+    "src": "/images/projects/sanctuary-living-main-1600.webp",
+    "src800": "/images/projects/sanctuary-living-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoYABAAPtFUo0uoJKMhsAgBABoJQBOmUBDABJXG2vgGbL371S+lLKAA/mhBkf++7lKkEmwCR149yVvXF542g9aUcvx/neEdRzTkhqhMp4o7cH1bV5r4vT4YHBWcTNq66yTfSkbpocTjLhsvFOGHU/Yp80JlrApk5AdnylmlmF3Xfqz39gndU3jV95Cl1fP2xiIyc1RhbVFZ4+X8xZz4atuVOAA=",
+    "width": 1600,
+    "height": 1051,
+    "aspectRatio": 1.522
+  },
+  "projects/sanctuary-relief-wall": {
+    "src": "/images/projects/sanctuary-relief-wall-1600.webp",
+    "src800": "/images/projects/sanctuary-relief-wall-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAADQBACdASoYABMAPtFao02oJSMiKA1RABoJQBWAAU0OHrevYLGQXyp9nDuxXRGGAAD+1LyI1RROPsIQvpoQe3j9yofhJvaRKGT18JRxGsNJWCyxnPyE+uG9djUnQfW2TnXyHO8ze8CqMHktPzr/fHwCVZ+k29e/Olr/OpvVAF4tAI2hebyhkIoNOSCCTuPOUjYH+bBnwJilfzVLsjKr/Q//e0+9GU9CDVfVt/dnxPRQgTG7SxQaa5boSwx5HTWt9PkquHAHowAAAA==",
+    "width": 1600,
+    "height": 1284,
+    "aspectRatio": 1.246
+  },
+  "projects/sanctuary-hallway": {
+    "src": "/images/projects/sanctuary-hallway-1600.webp",
+    "src800": "/images/projects/sanctuary-hallway-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAABwBQCdASoYABEAPtFgqU+oJSOiKAgBABoJYwCdB2gAIzu8cHFXW7/XBQt29A2+EWNLAQwAAP6bepvmIQCj3cILmxK3bzF0lXACgvWLW38faoWG/mNjvql6RkX3rDartX2H1eq27C0jFT//MZmzwxXpLRMzdXM5nfEBBBG2jCaSdDZP/CHzPLz9txcuRDWbY3K9Tjem1eOk2hKNu3mixzHIAk3v6bKKIRlN70XfgbUPAAy0EiwCdcrUQV4ox6Cuk5pvABVZkAA=",
+    "width": 1600,
+    "height": 1130,
+    "aspectRatio": 1.416
+  },
+  "projects/sacred-spaces-mandir": {
+    "src": "/images/projects/sacred-spaces-mandir-1600.webp",
+    "src800": "/images/projects/sacred-spaces-mandir-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAQBQCdASoTABgAPtFeqE+oJKOiKAgBABoJYgCdMoSCmBH+qW5OYLIKtAx2CsRFO3XAAPl0x3+bUmdP2klqEY5UMK1i9BgQCMOCUbszVuQqhDvmYxk7vjDmb/+m7twUwL7l3K+IjInd3r8ebD8iYu6aFStVYsqr2OLoTUfCE9ro/7cWJq1JPHnR8Z1funmJTVa/Mxeo3UAOfF/g6i5dsEbl1xQNEpGuXUI9a+wAAAA=",
+    "width": 1287,
+    "height": 1600,
+    "aspectRatio": 0.804
+  },
+  "projects/sacred-spaces-detail": {
+    "src": "/images/projects/sacred-spaces-detail-1600.webp",
+    "src800": "/images/projects/sacred-spaces-detail-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADwBACdASoYABMAPtFYpEyoJSOiKA1RABoJYgCxHxL+ABTZY4PS6JmbjCiuXZB0qAAA9HZOmw5S/Aw2TXxyVNYJ6manFaZdvIIvMnD8lyyp2hnAoiYpT4fcUZX7io3XeaCeAL2rTOvDEC7bckVMkSdas2V3K2y+6xRUpVFRwH8kU1YzsKsUwFBcq9yEBihmX1o1zSKWPV8fs+zG0AkThQjukCBIAA==",
+    "width": 1460,
+    "height": 1180,
+    "aspectRatio": 1.237
+  },
+  "projects/art-of-devotion-ram": {
+    "src": "/images/projects/art-of-devotion-ram-1600.webp",
+    "src800": "/images/projects/art-of-devotion-ram-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBACdASoYABEAPtFcqE2oJSQiKAqpABoJQBadAh3iIumZipsX9vTPqgAA/fvT13ZAhkKkLEyKkUNs8BHIoiw8zXVy4nmtEicc27fw+GP569UtugBi1eIF4D/0rgcbR2BxXvyj/07SNXuQlWwcPOwTb9d/pn82xxepelfAmupvMNEXdgKO2mP/dT/R+pRe9qyzwAAA",
+    "width": 1600,
+    "height": 1155,
+    "aspectRatio": 1.385
+  },
+  "projects/art-of-devotion-pichwai": {
+    "src": "/images/projects/art-of-devotion-pichwai-1600.webp",
+    "src800": "/images/projects/art-of-devotion-pichwai-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBQCdASoYABEAPtFSpU2oJCMiMBgIAQAaCUAWI+aIUwLPkq1iQ8x4Jk2TSNfLo65nVcAA/rAe2RenDgG59Ylcfi3hBIGLQdv/2LyNYb7rfo8kspx+sOQd2kHw4I+4XXVHyoweBSOuGQuh+MpFVPDInt5UCJhtGKTwztZA4xID7r8DYZeVYzWDq1kdihB1CMp2TSMMrVQ1TAzbk/dkabXIAAA=",
+    "width": 1600,
+    "height": 1149,
+    "aspectRatio": 1.393
+  },
+  "projects/art-of-devotion-detail": {
+    "src": "/images/projects/art-of-devotion-detail-1600.webp",
+    "src800": "/images/projects/art-of-devotion-detail-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABwBQCdASoYABMAPtFepE8oJSMiKAqpABoJZgC1G47Bw3uiVrFakLggrUOF7NGWBwUKh94AAP6aRiC9N/OUUNJAwa6XpLs/M9Yf6rmKBEpJj3IpLgg7osj2xd1WnZP6klPgzqfrZbnAVBBTmWskFvgE57IkpHOAToKZglD8PlLgNP1A8hm9bClBO00cYTb9i7Su2B01U5XaQGnA/fNyWIvLsjTcuJa1pJENaKhkn9eJR7YIh91ZHnOgP6mSFzAWFcAAAA==",
+    "width": 1500,
+    "height": 1190,
+    "aspectRatio": 1.261
+  },
+  "projects/aesthetic-designs-lotus": {
+    "src": "/images/projects/aesthetic-designs-lotus-1600.webp",
+    "src800": "/images/projects/aesthetic-designs-lotus-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAACQBQCdASoWABgAPtFgqU+oJSOiKAgBABoJQBWEFURwAPA6kQvSK8x1+EMb6O7QNVIdbrI2gAD9xT1zgMTlwZgAhaWiaZWZJUoB9/lgafQ0jsIij6lX3r861dgQGzvfPxRRlnk9hhME6q0mjyeqJf7/hP1Q6wyPBH0aQmvpH1JlVseg+/jmbp295OUgwFzGVE7vcMYLjmc8jVR9E43ynhRVzZr8mgLvqnuPFJmKrns8ON0nEIsdA3o4gcozOnU1k5zFhdNU+sqQktk3sFf6+N7tXvbPOIBibjij2Qc/OJgdD5ExKzKTXgAA",
+    "width": 1443,
+    "height": 1600,
+    "aspectRatio": 0.902
+  },
+  "projects/aesthetic-designs-lily": {
+    "src": "/images/projects/aesthetic-designs-lily-1600.webp",
+    "src800": "/images/projects/aesthetic-designs-lily-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBQCdASoRABgAPtFYoEuoJSMhsBgMAQAaCUAWI+NafoDk9zINu1UATLbjLanh0686wkAA/mQSi8pb8DAlLGCcj0lUzmJhf8k3ovumdfO2uCyvPuPBz49tzYKsoMqs4YdUP8nAa6uHQ/KTy84Ot1YlzSR+nxCzWgCdfBNo5QcMi1B6QS42quHZJVdzZVOgsa/2N7Q3kbzmB5WAAAA=",
+    "width": 1106,
+    "height": 1600,
+    "aspectRatio": 0.691
+  },
+  "projects/art-of-tradition-living": {
+    "src": "/images/projects/art-of-tradition-living-1600.webp",
+    "src800": "/images/projects/art-of-tradition-living-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBACdASoSABgAPtFSpU2oJCOiMBgIAQAaCUAX5wEzhNDEi9ITNcnjmGlmXlSvToAA/sjykjru+3FSmgXCIrSCiHt64b+W9Q4XusHUmOAXZvtG9rP34UIXU2Du+081HW3R1BjKXcWyNe4FK7AAjamyaqEM76zzqmQXh14Y7bxFzA/hew0OocqMrYCfcAhS2/CswuqHS0p0mVs3p7eqaZImMfPZTqyVqr5yrGLYDdgAAA==",
+    "width": 1194,
+    "height": 1600,
+    "aspectRatio": 0.746
+  },
+  "projects/art-of-tradition-bed": {
+    "src": "/images/projects/art-of-tradition-bed-1600.webp",
+    "src800": "/images/projects/art-of-tradition-bed-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBQCdASoRABgAPtFcqE4oJSQiKAqpABoJYwC7L9SrgAlEAnlLG1mYpwfvCPYxD5M7rDCAAP5XwJA2/5AxAKeE4o6FQGFusb3mL2zZ9+eq5S1P2HuSqyyoIi5YnVpjetbW1XvOsnPTe2+VrUMpTrxzr11wkGTB0aGkFgfVNlWU21LxEe195F2nyiaARKB1WfMbyglA/A7Nbd5L0LuE0ckPIO/jQjErnyCBAAAA",
+    "width": 1156,
+    "height": 1600,
+    "aspectRatio": 0.723
+  },
+  "projects/crafted-with-character-main": {
+    "src": "/images/projects/crafted-with-character-main-1600.webp",
+    "src800": "/images/projects/crafted-with-character-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAQBQCdASoYABIAPtFepU6oJSMiKAqpABoJQBdiP/wD6Q+omH50yUPuf+ZvyceNo+wAAP6qs2FTn+1VlvAPE3QqBH8NpPEpXyULdHlg5KDmKnKZImeH8PKibT/6zWzZ9HDI2Lyn4EnQV4oWeHZKXgWgGiG4T8WQWvYRF8fs9auHVUf8I4eHr7EiVN0eAPhqM0jBo/gByikZS3oY1Ned3qlN2FPAiRyY1EpwYwAAAAA=",
+    "width": 1600,
+    "height": 1217,
+    "aspectRatio": 1.315
+  },
+  "projects/the-dining-salone-main": {
+    "src": "/images/projects/the-dining-salone-main-1600.webp",
+    "src800": "/images/projects/the-dining-salone-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBQCdASoYABIAPtFcp04oJSOiKAqpABoJQBOmZDXrwVzqNUktYWmuE+eMLw8CRY37oHgAAP6wGumFNqxQzBvgShNthUwXgw6v2UqaedzhQIA+BXWMYGk7l53p+0s8TsEzpQ/9VvXM4lqjJm1OypRZULnkXOalwK/7n9G2/WMYF34EfGZ+AiCuYNqT6oHRAQ31F2aNzu+5mi66rgrLrzy+qaZw17dLfCpF4OryPxzv9QAA",
+    "width": 1600,
+    "height": 1200,
+    "aspectRatio": 1.333
+  },
+  "projects/culinary-studio-bar": {
+    "src": "/images/projects/culinary-studio-bar-1600.webp",
+    "src800": "/images/projects/culinary-studio-bar-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAAAwBQCdASoSABgAPtFeqE+oJKOiKAgBABoJQBdl9eAdPbPdcXUFnyJ8iCr+KJdLXaiWQAD42d5Mk9s83+oDEByq3MKu2Ii+KWJF8aiYWpOiOMn3oF0pm/qwvgWAemEhysmAB1KZwRIxcW0AaOCM74ftNolbJ6qEoazBjID/7SexcB83nPKUIzg2ODu+svhxQGkv+QyMFzZ2PE0VHVq2XjsY0pfsXDCmTGOz+5EqjlLc7aJiuF4Bz2Lb6tBFJqq58jAHMjqhdIWLgAAA",
+    "width": 1198,
+    "height": 1600,
+    "aspectRatio": 0.749
+  },
+  "projects/culinary-studio-arched": {
+    "src": "/images/projects/culinary-studio-arched-1600.webp",
+    "src800": "/images/projects/culinary-studio-arched-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBQCdASoYABIAPtFepE6oJSMiKAqpABoJQBYj43iAAp2ZiQzAvcCIrAjjrGiTGe41hDXgAOHmBzINVzC8BdKK68PxaqfOEe5xbV3mhRiWl4lMccjokZG75oXJwZumgyP8KLsFCOQWfax33cmO+siDR9OGK10mppj6YUyTdMOcCnozqE0xn+dU/QfcRIiT9zhoc4C4fj+t6O10ALOEdWEADDAAAA==",
+    "width": 1330,
+    "height": 1020,
+    "aspectRatio": 1.304
+  },
+  "projects/culinary-studio-dining": {
+    "src": "/images/projects/culinary-studio-dining-1600.webp",
+    "src800": "/images/projects/culinary-studio-dining-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADQBACdASoYABMAPtFepU6oJSMiKAqpABoJYgCnFA9rOtp48yPA5IBPsJ4aLoNv4AD8tBpruEhdNiSds7jerghSuUhSu1Vvbi4qeFtNKWRmkowFDas9b6HtGMiHkRDV5815HkVjCaTkdv3X3wTdp7DxY49zb+C/G5GxYzf86bBq6NOSdyd2pc6dS37e+PVCDIGFarp2rOtTDrlxxS8GMVIJIeSVCFrnPn4WXRWK4eG6fq6FGu3tHytBXwXozh3cUAA=",
+    "width": 1330,
+    "height": 1050,
+    "aspectRatio": 1.267
+  },
+  "projects/culinary-studio-modular": {
+    "src": "/images/projects/culinary-studio-modular-1600.webp",
+    "src800": "/images/projects/culinary-studio-modular-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBACdASoYABAAPtFUo0uoJKMhsAgBABoJZgCdMoCGAB+sSMG8/oobfPn38AD+Az7oSqKomVJWA201yxaB0nyJ5VeNvWDSUzWtm8YWvaB3+5XMkYQcyu2gG8OAAOeFzJye9uoYY5g9kZfWz6GymZD/XWSl6uZqowIUahXcChkkvknH5PfxxZRgYbaeig1uBJ4Nq+8sF9H5BHkcqFWRVv226I7C7un/KZEmQEAA",
+    "width": 1330,
+    "height": 870,
+    "aspectRatio": 1.529
+  },
+  "projects/heart-of-home-kitchen": {
+    "src": "/images/projects/heart-of-home-kitchen-1600.webp",
+    "src800": "/images/projects/heart-of-home-kitchen-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAACQBACdASoYABMAPtFcpU6oJSMiKAqpABoJQBYdgbbDT1gL7Nd6MKeFiAZ2gQAA/LSvj5q1S95EX/kkKCcMuc8GTfBwov/LwLTntdZVxJgNfiDFW/orAxwXCkmoeqBUZGS9uFCaAzsoUVBlrQrg78hFC2vsEFpWly4LIGsaEE7LnUAmNm9Y/imjOHg86YkC+UQAsBpsWqG1uDrIVZYu+DusuYfJpDJzqfYSGOeAAAA=",
+    "width": 1600,
+    "height": 1261,
+    "aspectRatio": 1.269
+  },
+  "projects/heart-of-home-dining": {
+    "src": "/images/projects/heart-of-home-dining-1600.webp",
+    "src800": "/images/projects/heart-of-home-dining-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBACdASoYAAwAPtFUo0uoJKMhsAgBABoJYgCdMoADCiVWOOx/sZ9BRTAAAP3VO9WhNS15v5YXoyBTfm55B/1kQaZc83uFRhy0QDLLP8E5JYPAC8CR4Cb1fH98FaH8EE9El3vFDyJfbyi43cmUnq1QCoLvMKTNAokOamKCREwMlot9r3Utoi48D3iadiqigu8tjpXYiSkCAJNWrwc4AA==",
+    "width": 1600,
+    "height": 825,
+    "aspectRatio": 1.939
+  },
+  "projects/balcony-terrace-main": {
+    "src": "/images/projects/balcony-terrace-main-1600.webp",
+    "src800": "/images/projects/balcony-terrace-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBACdASoYABAAPtFUo0uoJKMhsAgBABoJbACdMoRwFf/gKFOEr+0i/MrEAP4JeapHQ0mEKOyOiY6IFS4mSD15fKjzBiglawaAwkSSdVehlsxpRJhWMPqNte+omPbZw4TKCo7v+CWU92S1mV/3lxFeRxWJALm2OPBjj1+DLnNrMAwfAak0cqNH11sgHrgxPvCt0tEdir0A6JBL2T9au2ZblQg0HgAA",
+    "width": 1600,
+    "height": 1067,
+    "aspectRatio": 1.5
+  },
+  "projects/little-atelier-playroom": {
+    "src": "/images/projects/little-atelier-playroom-1600.webp",
+    "src800": "/images/projects/little-atelier-playroom-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAACQBQCdASoWABgAPtFepE6oJSMiKAqpABoJZACdMoAlzgV3DiacFQ+rcEBE0RX2b7VaDR2HYAD+1xXHbSwzkUL1Kwnad5a3Fpg5mrWzRMErhKClLHJKZa+4UZLnBoI5eQKvbHBxXAhrmY/BktTU5prqHjqa7zIsyAWCC2B+soinfHOdrPA4iS8eKWm6TUIoTtj9E/QWEKubhfbQqt8/jQ1oeBQU3bAbYfIuoaDNeTZUIpdYknx5bY9hM8M/6z3pnhRUjuVjyc5X6TCEfS6oMV5l+w0GBJ+5A3gDZVO7wkQVVqbaQSsNe0TTrNzIjsg6JNAsZ5N7TNNZI+DtQAA=",
+    "width": 1475,
+    "height": 1600,
+    "aspectRatio": 0.922
+  },
+  "projects/little-atelier-study": {
+    "src": "/images/projects/little-atelier-study-1600.webp",
+    "src800": "/images/projects/little-atelier-study-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABwBACdASoLABgAPtFUo0uoJKMhsAgBABoJbACdMoMjbDt973yCJHtittgZAAD9/4wAqbR1dJTY5JTLipyW8kDM8AhqM1tLJzNBbrsAjXIZjNhUegLWQ47zgBYNByYU79++SXPb/9WG/GHC2jegmEj69TY6bYcW4Ndtsx+23StTefG3BODcRAAA",
+    "width": 740,
+    "height": 1600,
+    "aspectRatio": 0.463
+  },
+  "projects/sanctuary-rest-master": {
+    "src": "/images/projects/sanctuary-rest-master-1600.webp",
+    "src800": "/images/projects/sanctuary-rest-master-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAAwAPtFWpEuoJKOhsAgBABoJZACdMoADdmpSBuZMqZQOgADif4pAvGUVq9rToWA6gGMroo67JOSr9drGlGQ5uaE/jSuzUUrCTNQnvMuNm8EnnLrOxr7LWfyH+2TmTX3uHgdjJ9XfrGdJ0Y9GEfTN1B3UIhEwAAA=",
+    "width": 1600,
+    "height": 820,
+    "aspectRatio": 1.951
+  },
+  "projects/sanctuary-rest-sub1": {
+    "src": "/images/projects/sanctuary-rest-sub1-1600.webp",
+    "src800": "/images/projects/sanctuary-rest-sub1-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBQCdASoYABUAPtFcpU6oJSMiKAqpABoJZQC/OA30QVhU6bn+6YfHMy1sn2DGFM3MAAD+tAizS5yGqQTx81ZUZlrQiq7WuUIo2Lq9+9v+6TYSWn+cbL5Dvm2nBq1ykUGQoySFJkZ3oa9S7CGUpHXyKuVBTrCrw4Maw0LrVyd7iDAefpeDozAft9cENjA4laOcIl5Fre1Trt1Q7YrTgYF6SKOrsCAA",
+    "width": 1290,
+    "height": 1150,
+    "aspectRatio": 1.122
+  },
+  "projects/sanctuary-rest-sub2": {
+    "src": "/images/projects/sanctuary-rest-sub2-1600.webp",
+    "src800": "/images/projects/sanctuary-rest-sub2-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADQBACdASoYABYAPtFcpU6oJKMiKAqpABoJQBYdgiLpyS/D/CMfXZHyjQzmMZQ5uAD+kWpSGCYQLJUmAkq+9ETensIkIbTetLdm3gs+7N3Iu2GEwTq14pki/9QkvaUVNQlu/G6Y5Eid2MBS4k1vdcYt6zq0FGiBNH3aeYcFgyeH1CODQO5sro8huzwV3Ct5kS9Xx+aIu8jnV/oUFIBVsB80qg7pCmHOxI0BydD1lQrgAA==",
+    "width": 1280,
+    "height": 1150,
+    "aspectRatio": 1.113
+  },
+  "projects/sanctuary-rest-sub3": {
+    "src": "/images/projects/sanctuary-rest-sub3-1600.webp",
+    "src800": "/images/projects/sanctuary-rest-sub3-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAACwBQCdASoYABYAPtFepU6oJSMiKAqpABoJYwDCuUAAdWOchhzcgnRE+j13tTJz1EGcGMzpAAAAzj5BbyxOf0W3bKHj+K0sGkVK3s5tHeXUQpeVMMeRT88Q8KNy5ElkNUOcgOCorYk+QN0m80yNo8jfPJmcA9KHIQWIrMDqreyGoGz41vjv63CNmfPezdorsWr+57Xaq26cah4txqgUEgHxbXJ7yjNz8srNJukn8E9as+Jw9e6hSsxzGRbsWHT4a4AAAA==",
+    "width": 1250,
+    "height": 1150,
+    "aspectRatio": 1.087
+  },
+  "projects/teenage-edit-main": {
+    "src": "/images/projects/teenage-edit-main-1600.webp",
+    "src800": "/images/projects/teenage-edit-main-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAADQBQCdASoSABgAPtFgqE+oJSOiKAgBABoJQBWEF6AwnrCtLUhRIsqute6DuOUMUGpSLeg852wAAP3jaWXxoJ7UB8k6ZjViZSSvvbwwOUb/t2751Rd+K/hfvnEXJ3XghQOyEGHhNBTk7JOzES4d/LrpDB1b5+frCkAbA+VuWvuN31WniwiH+DKlMjwUz1tO0PWA+AiueK4Woyb2jLBrsUk57ohXzxcBSOmuGrOgHUdS+e0juuHn43bZSdyWdhjCI8sOoAQ+0+vA47sAInWwcpJ/M3/ObMeMPqJVsJYHzOAAAA==",
+    "width": 1186,
+    "height": 1600,
+    "aspectRatio": 0.741
+  },
+  "projects/commercial-kafe-interior-bar": {
+    "src": "/images/projects/commercial-kafe-interior-bar-1600.webp",
+    "src800": "/images/projects/commercial-kafe-interior-bar-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASoYAAwAPtFUpEuoJKOhsAgBABoJbACdMoRwAA9iDjvOgevm+wAA/mz1J+ROS941sbbqyICw2HhtIWSHKqXNxEotyklILtdSQJOSJVOOFyX2OFxMhhvAw5U6mSyS7tbzc+8KGuPZzSxkMR8iyG5f5xdXuaqDkiOLx7t8YC6TbiGM0HXPwxxHFfT7KuA5buaAAAA=",
+    "width": 1600,
+    "height": 808,
+    "aspectRatio": 1.98
+  },
+  "projects/commercial-kafe-exterior-dusk": {
+    "src": "/images/projects/commercial-kafe-exterior-dusk-1600.webp",
+    "src800": "/images/projects/commercial-kafe-exterior-dusk-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAAkAPtFWo0uoJKMhsAgBABoJZgCdMoR3ACmnu12/DtI3+gQAAP7AU8LrhpId1uSv594UxC0671AEon5qY/qePXwI0ax8q+UtaYWzVRfNygasnLmDkVy6K/hO3L1OeWCohlot3lvWa8k0vrVZ8yeBUZ7vnt4QOmDDogZ4qSrd8UZX6AA=",
+    "width": 1600,
+    "height": 625,
+    "aspectRatio": 2.56
+  },
+  "projects/commercial-kafe-atrium": {
+    "src": "/images/projects/commercial-kafe-atrium-1600.webp",
+    "src800": "/images/projects/commercial-kafe-atrium-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABwBACdASoPABgAPtFUo0uoJKMhsAgBABoJagCdL1G4ACpbj4AG5zIutedIAAD9Qh5MvTHS5wacO7pMzxSZfDQ3fcMytyDlU9Bw8Oi6MAm+vEqOqBMzMBNfIbZvvwyc5RWpbM3ctwArYkYrr1jdkxu+ftLwF2ZDjp+G0D50sJMdtj+NFUi41R20d8/V8Ew8bpwSsuAA",
+    "width": 1016,
+    "height": 1600,
+    "aspectRatio": 0.635
+  },
+  "projects/commercial-kafe-rooftop-pool": {
+    "src": "/images/projects/commercial-kafe-rooftop-pool-1600.webp",
+    "src800": "/images/projects/commercial-kafe-rooftop-pool-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASoYAA8APtFUo0uoJKMhsAgBABoJbACdMoR4Lf/2SORIoy/7Q5KnPFWainFk/c5oAP7AaigjOnWoVCoPn7ckVPANLIGH6mcSR8W5KD43Fn/Y8OKcjFPtXXWsGj9oD8CZi8RkwPEhE/62HEiNQMiR//YrKYkMnfu6l1ub8xEA8R4phJDyL64TslGKY6Dn5HYj+HPlHyTTdEX8DZt7PgUY/pR6a4RrG8eQCgQxVfyfaoLCbUkfxSQzAAAA",
+    "width": 1600,
+    "height": 1006,
+    "aspectRatio": 1.59
+  },
+  "projects/commercial-kafe-illuminated-stairs": {
+    "src": "/images/projects/commercial-kafe-illuminated-stairs-1600.webp",
+    "src800": "/images/projects/commercial-kafe-illuminated-stairs-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoYAA8APtFUo0uoJKMhsAgBABoJagCdBagWwA5Nvo9BsScI8efcNkAA/nUlBOjBTtsS6+B0bdiX8ZG+zxA4s8DsWJlxSh+2Khl0yN31SV9PGjG8ffr7key5DkcCSsoQcBbwEolIaiZ9KrkoTLYvjDi2DGLK2N85ZHXFEOsbxK7+Xdutf2XvCOSeGI7Cyh8bBUAAAA==",
+    "width": 1600,
+    "height": 1026,
+    "aspectRatio": 1.559
+  },
+  "projects/commercial-kafe-night-render": {
+    "src": "/images/projects/commercial-kafe-night-render-1600.webp",
+    "src800": "/images/projects/commercial-kafe-night-render-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADQBQCdASoYABMAPtFcpE6oJSMiKAqpABoJagCdMzQ+ItLUwAKqWyUfga5yDDf/loeIKqI7qMWAAP7qAM6dSi2yQ5V+J68C6rTcPFJmjXmP0lN/ovyZeIN/qcAu+QhCFyaqMaILPYCiE+O7XcXbyMKBnw/EyYXFA1OiMKlKH5Zc74qbosbSYZFfvSMVtirx5gK4S8OcGHwXdQc1N2cbwTueF33V8o7/NMMU/cYbIpgk6gU1BzYh3kDP6u8eTHZNBNgwNFQtfHRftp54aTT5fkz8GC01VJ8m6Wq4CgUc9IP63nonYEXdJAAA",
+    "width": 1600,
+    "height": 1233,
+    "aspectRatio": 1.298
+  },
+  "projects/final-cta-lounge": {
+    "src": "/images/projects/final-cta-lounge-1600.webp",
+    "src800": "/images/projects/final-cta-lounge-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYABAAPtFUpEuoJKOhsAgBABoJQBOmUI4Cv/wGt99PDkWRnxB2OAD+rFdRZO88RuOZFA7FmhXGx0VxnlsOnGgW2awWxE420PjWq7fSRlkd44AP9BFW5zHEHchWB1keSB8n8RyD5XCq0BIipy+7P/nzyyDE6183eneFzY6fOJXZ2YnUawAAAA==",
+    "width": 1600,
+    "height": 1067,
+    "aspectRatio": 1.5
+  }
+}

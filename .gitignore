@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+
+.env*
+!.env.example
+
+KA_interior_Broucher.pdf
