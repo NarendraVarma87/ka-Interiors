@@ -39,25 +39,33 @@ export function SignatureSpacesPinned() {
     const section = sectionRef.current;
     const track = trackRef.current;
 
-    // Calculate total horizontal scroll distance
-    const getScrollAmount = () => -(track.scrollWidth - window.innerWidth + 120);
+    // Use gsap.context for robust React StrictMode lifecycle management
+    const ctx = gsap.context(() => {
+      const getScrollAmount = () => -(track.scrollWidth - window.innerWidth + 100);
 
-    const tween = gsap.to(track, {
-      x: getScrollAmount,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: section,
-        start: 'top top',
-        end: () => `+=${Math.max(window.innerHeight * 1.8, track.scrollWidth - window.innerWidth)}`,
-        pin: true,
-        scrub: 1,
-        invalidateOnRefresh: true,
-      },
-    });
+      gsap.to(track, {
+        x: getScrollAmount,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: () => `+=${Math.max(window.innerHeight, track.scrollWidth - window.innerWidth + 100)}`,
+          pin: true,
+          scrub: 1,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      });
+    }, sectionRef);
+
+    // Refresh after DOM layout settles
+    const refreshTimer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 400);
 
     return () => {
-      tween.scrollTrigger?.kill();
-      tween.kill();
+      clearTimeout(refreshTimer);
+      ctx.revert();
     };
   }, [isDesktop]);
 
@@ -70,7 +78,7 @@ export function SignatureSpacesPinned() {
       }`}
     >
       {/* Top Header Row */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-8 lg:mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-8 lg:mb-10 shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold font-sans font-semibold">
@@ -97,9 +105,10 @@ export function SignatureSpacesPinned() {
         </div>
       </div>
 
-      {/* Horizontal Cards Container (GSAP pinned on desktop; native snap-scroll on mobile) */}
+      {/* Horizontal Cards Container */}
       <div
         ref={trackRef}
+        data-lenis-prevent={!isDesktop ? "true" : undefined}
         className={`${
           isDesktop
             ? 'flex gap-8 px-8 sm:px-16 w-max will-change-transform'
@@ -109,13 +118,13 @@ export function SignatureSpacesPinned() {
         {signatureChapters.map((chapter) => (
           <div
             key={chapter.slug}
-            className={`group relative shrink-0 snap-center rounded-3xl overflow-hidden bg-alabaster/60 border border-gold/20 shadow-lg hover:shadow-2xl transition-all duration-500 ${
-              isDesktop ? 'w-[420px] lg:w-[480px]' : 'w-[82vw] sm:w-[380px]'
+            className={`group relative shrink-0 snap-center rounded-3xl overflow-hidden bg-white border border-gold/20 shadow-lg hover:shadow-2xl transition-all duration-500 ${
+              isDesktop ? 'w-[420px] lg:w-[480px]' : 'w-[84vw] sm:w-[380px]'
             }`}
             data-cursor-text="VIEW"
           >
             <Link href={`/portfolio/${chapter.slug}`} className="block h-full">
-              {/* Image Container with 4:3 or 16:10 Ratio */}
+              {/* Image Container */}
               <div className="relative aspect-[16/11] overflow-hidden bg-espresso">
                 <Image
                   src={chapter.coverImage}
@@ -138,7 +147,7 @@ export function SignatureSpacesPinned() {
               </div>
 
               {/* Editorial Info Content */}
-              <div className="p-6 sm:p-7 space-y-3 bg-ivory">
+              <div className="p-6 sm:p-7 space-y-3 bg-white">
                 <div className="flex items-baseline justify-between">
                   <h3 className="font-serif text-2xl sm:text-3xl font-light text-ink group-hover:text-gold-dark transition-colors duration-200">
                     {chapter.title}

@@ -358,5 +358,13 @@
     "width": 1600,
     "height": 1067,
     "aspectRatio": 1.5
+  },
+  "projects/commercial-kafe-exterior-day": {
+    "src": "/images/projects/commercial-kafe-exterior-day-1600.webp",
+    "src800": "/images/projects/commercial-kafe-exterior-day-800.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAAAQBQCdASoYABIAPu1qrVCppaQiqAqpMB2JZACxHt9OAAf/p5hXXTXDGzwCWavrTrAAAPEvyvEbGn5gtxhmUjndUDcUjSqeLOYx/3kb4aqwqsKoUgBIwL9futI/8Z9f6avWCDpGliG68FKUdMIguN5H9NDp4MCS2DJhzvD/8bAqfRCcGxnJx9x2KQICvOXoIM5vPKijDP6Y201giDa705gkdC4XrZOfWQuUft8W2gAAAA==",
+    "width": 1600,
+    "height": 1232,
+    "aspectRatio": 1.298
   }
 }

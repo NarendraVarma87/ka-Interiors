@@ -63,6 +63,7 @@ function LotusOrnament({ className = 'w-12 h-12 text-gold' }: { className?: stri
 
 export function HeritageSpotlight() {
   const [sliderPosition, setSliderPosition] = useState(50);
+  const [isDragging, setIsDragging] = useState(false);
   const sliderContainerRef = useRef<HTMLDivElement>(null);
 
   const handleSliderMove = (clientX: number) => {
@@ -134,7 +135,7 @@ export function HeritageSpotlight() {
             {/* Base Image (Devotion Mural) */}
             <div className="absolute inset-0">
               <Image
-                src="/images/projects/art-of-devotion-murals-1600.webp"
+                src="/images/projects/art-of-devotion-ram-1600.webp"
                 alt="Art of Devotion Epic Indian Wall Mural"
                 fill
                 sizes="100vw"
@@ -145,20 +146,18 @@ export function HeritageSpotlight() {
               </div>
             </div>
 
-            {/* Revealed Image (Sculpted Relief Wall) */}
+            {/* Revealed Top Image (Sculpted Relief Wall with pure clipPath) */}
             <div
-              className="absolute inset-0 overflow-hidden"
-              style={{ width: `${sliderPosition}%` }}
+              className="absolute inset-0 pointer-events-none select-none"
+              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <div className="absolute inset-0 w-full h-full min-w-[100%]">
-                <Image
-                  src="/images/projects/sanctuary-relief-wall-1600.webp"
-                  alt="Aesthetic Sculpted Relief Feature Wall"
-                  fill
-                  sizes="100vw"
-                  className="object-cover object-center"
-                />
-              </div>
+              <Image
+                src="/images/projects/sanctuary-relief-wall-1600.webp"
+                alt="Aesthetic Sculpted Relief Feature Wall"
+                fill
+                sizes="100vw"
+                className="object-cover object-center"
+              />
               <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-espresso/80 backdrop-blur-md border border-gold/40 text-[10px] font-sans text-champagne uppercase tracking-widest">
                 Aesthetic Designs · Relief Wall
               </div>
@@ -166,7 +165,7 @@ export function HeritageSpotlight() {
 
             {/* Divider Line & Handle */}
             <div
-              className="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-gold-light via-gold to-gold-dark shadow-[0_0_12px_rgba(201,149,60,0.8)]"
+              className="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-gold-light via-gold to-gold-dark shadow-[0_0_12px_rgba(201,149,60,0.8)] pointer-events-none"
               style={{ left: `${sliderPosition}%` }}
             >
               <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-espresso border-2 border-gold flex items-center justify-center shadow-lg">
@@ -186,7 +185,7 @@ export function HeritageSpotlight() {
             <div className="space-y-4">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-gold/20">
                 <Image
-                  src="/images/projects/sanctuary-mandir-main-1600.webp"
+                  src="/images/projects/sacred-spaces-mandir-1600.webp"
                   alt="KA Interiors Sacred Spaces Mandir"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -218,7 +217,7 @@ export function HeritageSpotlight() {
             <div className="space-y-4">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-gold/20">
                 <Image
-                  src="/images/projects/art-of-devotion-murals-1600.webp"
+                  src="/images/projects/art-of-devotion-pichwai-1600.webp"
                   alt="The Art of Devotion Murals"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"

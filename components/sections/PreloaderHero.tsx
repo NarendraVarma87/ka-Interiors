@@ -14,6 +14,12 @@ export function PreloaderHero() {
     // 1.2s preloader timing
     const timer = setTimeout(() => {
       setShowPreloader(false);
+      // Ensure GSAP ScrollTrigger updates all layout positions once curtain finishes
+      setTimeout(() => {
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new Event('resize'));
+        }
+      }, 900);
     }, 1300);
 
     return () => clearTimeout(timer);
@@ -91,7 +97,6 @@ export function PreloaderHero() {
               alt="KA Interiors Sanctuary Luxury Living Room"
               fill
               priority
-              quality={90}
               placeholder="blur"
               blurDataURL="data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoYABAAPtFUo0uoJKMhsAgBABoJQBOmUBDABJXG2vgGbL371S+lLKAA/mhBkf++7lKkEmwCR149yVvXF542g9aUcvx/neEdRzTkhqhMp4o7cH1bV5r4vT4YHBWcTNq66yTfSkbpocTjLhsvFOGHU/Yp80JlrApk5AdnylmlmF3Xfqz39gndU3jV95Cl1fP2xiIyc1RhbVFZ4+X8xZz4atuVOAA="
               className="object-cover object-center brightness-[0.72]"

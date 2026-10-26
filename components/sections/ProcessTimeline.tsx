@@ -34,7 +34,7 @@ export function ProcessTimeline() {
         </div>
 
         {/* Stepper Navigation Bar */}
-        <div className="py-8 border-b border-gold/15 overflow-x-auto scrollbar-none">
+        <div data-lenis-prevent="true" className="py-8 border-b border-gold/15 overflow-x-auto scrollbar-none">
           <div className="flex items-center min-w-max gap-3 sm:gap-4">
             {BRAND_DATA.processSteps.map((step, idx) => {
               const isActive = activeStepIndex === idx;

@@ -49,7 +49,7 @@ body {
   padding: 0;
   background-color: var(--ivory);
   color: var(--ink);
-  overflow-x: hidden;
+  overflow-x: clip;
   min-height: 100vh;
 }
 

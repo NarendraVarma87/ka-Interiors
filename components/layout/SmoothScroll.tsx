@@ -26,9 +26,15 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       smoothWheel: true,
       wheelMultiplier: 1,
       touchMultiplier: 1.5,
+      prevent: (node) => {
+        return Boolean(
+          node.closest?.('[data-lenis-prevent], [role="dialog"], [aria-modal="true"], .overflow-y-auto')
+        );
+      },
     });
 
     lenisRef.current = lenis;
+    (window as any).__lenis = lenis;
 
     // Connect Lenis scroll events to GSAP ScrollTrigger
     lenis.on('scroll', ScrollTrigger.update);
@@ -40,10 +46,39 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     gsap.ticker.add(updateTicker);
     gsap.ticker.lagSmoothing(0);
 
+    // Smoothly intercept in-page anchor links (e.g. #philosophy, #signature-spaces, #enquiry)
+    const handleAnchorClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement).closest('a[href^="#"]');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#' || href.length <= 1) return;
+
+      const targetEl = document.querySelector(href);
+      if (targetEl) {
+        e.preventDefault();
+        lenis.scrollTo(targetEl as HTMLElement, { offset: -60, duration: 1.2 });
+      }
+    };
+    document.addEventListener('click', handleAnchorClick);
+
+    // Refresh ScrollTrigger after fonts/DOM settle and when preloader lifts
+    const handleLoad = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener('load', handleLoad);
+
+    const refreshTimer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 1600);
+
     return () => {
+      clearTimeout(refreshTimer);
+      window.removeEventListener('load', handleLoad);
+      document.removeEventListener('click', handleAnchorClick);
       gsap.ticker.remove(updateTicker);
       lenis.destroy();
       lenisRef.current = null;
+      delete (window as any).__lenis;
     };
   }, []);
 

@@ -5,6 +5,7 @@ import { motion, useSpring, useMotionValue } from 'motion/react';
 
 export function CustomCursor() {
   const [isEnabled, setIsEnabled] = useState(false);
+  const [hasMoved, setHasMoved] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [cursorText, setCursorText] = useState<string | null>(null);
 
@@ -26,6 +27,7 @@ export function CustomCursor() {
     setIsEnabled(true);
 
     const handleMouseMove = (e: MouseEvent) => {
+      setHasMoved(true);
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
@@ -64,7 +66,7 @@ export function CustomCursor() {
         style={{
           x: mouseX,
           y: mouseY,
-          opacity: isHovered ? 0 : 0.9,
+          opacity: hasMoved ? (isHovered ? 0 : 0.9) : 0,
         }}
       />
       {/* Outer soft luxury ring / magnetic badge */}
@@ -73,6 +75,7 @@ export function CustomCursor() {
         style={{
           x: cursorX,
           y: cursorY,
+          opacity: hasMoved ? 1 : 0,
           width: cursorText ? 84 : isHovered ? 52 : 32,
           height: cursorText ? 84 : isHovered ? 52 : 32,
           backgroundColor: cursorText
