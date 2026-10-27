@@ -42,34 +42,43 @@ export function PreloaderHero() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className="relative w-24 h-24 mb-6"
+                className="relative w-28 h-28 sm:w-32 sm:h-32 mb-6"
               >
-                <div className="absolute inset-0 rounded-full border border-gold/40 glow-gold-lg animate-pulse" />
-                <Image
-                  src="/images/brand/ka-phoenix-monogram.png"
-                  alt="KA Interiors Monogram"
-                  fill
-                  priority
-                  className="object-contain p-2"
-                />
+                {/* Luminous Pulsing Gold Halo */}
+                <div className="absolute -inset-4 rounded-full bg-radial from-gold/50 via-gold/20 to-transparent blur-2xl animate-pulse" />
+                
+                {/* Metallic Gold Ring */}
+                <div className="relative w-full h-full rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-[0_0_35px_rgba(201,149,60,0.5)]">
+                  <div className="w-full h-full rounded-full bg-espresso flex items-center justify-center p-3">
+                    <Image
+                      src="/images/brand/ka-phoenix-monogram.png"
+                      alt="KA Interiors Monogram"
+                      width={100}
+                      height={100}
+                      priority
+                      className="object-contain drop-shadow-[0_4px_16px_rgba(201,149,60,0.8)]"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
+                    />
+                  </div>
+                </div>
               </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="text-center space-y-1.5"
+                className="text-center space-y-2"
               >
-                <h1 className="font-serif text-2xl tracking-[0.2em] font-medium text-white uppercase">
+                <h1 className="font-serif text-3xl sm:text-4xl tracking-[0.22em] font-medium text-white uppercase">
                   KA <span className="text-gold-gradient italic font-normal">Interiors</span>
                 </h1>
-                <p className="font-sans text-[11px] uppercase tracking-[0.35em] text-champagne/70">
-                  Vijayawada · Est. 30+ Yrs
+                <p className="font-sans text-xs uppercase tracking-[0.4em] text-gold font-medium">
+                  Studio Vijayawada · Est. 30+ Yrs
                 </p>
               </motion.div>
 
               {/* Gold Progress Line */}
-              <div className="w-40 h-[1.5px] bg-walnut mt-6 rounded-full overflow-hidden">
+              <div className="w-48 h-[2px] bg-walnut mt-7 rounded-full overflow-hidden">
                 <motion.div
                   initial={{ x: '-100%' }}
                   animate={{ x: '100%' }}

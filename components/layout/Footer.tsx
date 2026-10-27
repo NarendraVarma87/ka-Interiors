@@ -26,22 +26,35 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-gold/15">
           {/* Brand Col */}
           <div className="md:col-span-5 lg:col-span-5 space-y-6">
-            <Link href="/" className="inline-flex items-center gap-3.5 group">
-              <div className="relative w-12 h-12 rounded-full p-1 bg-walnut border border-gold/40 flex items-center justify-center shadow-md">
-                <Image
-                  src="/images/brand/ka-phoenix-monogram.png"
-                  alt="KA Interiors Monogram"
-                  width={42}
-                  height={42}
-                  className="object-contain transition-transform duration-500 group-hover:rotate-6"
-                />
+            <Link href="/" className="inline-flex items-center gap-4 sm:gap-5 group">
+              <div className="relative shrink-0">
+                {/* Luminous Gold Halo */}
+                <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-gold/60 via-gold/30 to-gold-light/50 blur-xl opacity-80 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                
+                {/* Multi-Stop Metallic Gold Ring */}
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 rounded-full p-[2.5px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-[0_8px_30px_rgba(201,149,60,0.45)] group-hover:shadow-[0_8px_40px_rgba(201,149,60,0.7)] group-hover:scale-105 transition-all duration-500">
+                  <div className="w-full h-full rounded-full bg-espresso flex items-center justify-center p-2.5 sm:p-3 overflow-hidden">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src="/images/brand/ka-phoenix-monogram.png"
+                        alt="KA Interiors Monogram Seal"
+                        fill
+                        className="object-contain drop-shadow-[0_4px_12px_rgba(201,149,60,0.75)] transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div>
-                <span className="font-serif text-2xl tracking-wider font-medium text-white">
+                <span className="font-serif text-3xl sm:text-4xl lg:text-[40px] tracking-wide font-medium text-white leading-none block">
                   KA <span className="text-gold-gradient font-normal italic">Interiors</span>
                 </span>
-                <p className="text-[10px] uppercase tracking-[0.28em] text-champagne/80 font-sans mt-0.5">
+                <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-gold font-sans font-semibold mt-2">
                   {BRAND_DATA.tagline}
+                </p>
+                <p className="text-[10px] uppercase tracking-[0.22em] text-champagne/70 font-sans mt-0.5">
+                  Head Office · Vijayawada, Andhra Pradesh
                 </p>
               </div>
             </Link>

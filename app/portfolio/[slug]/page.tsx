@@ -67,7 +67,7 @@ export default async function ChapterPage({ params }: PageProps) {
             <span>Back to All Chapters</span>
           </Link>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <span className="text-xs uppercase tracking-widest font-sans font-semibold text-gold">
               Chapter {project.chapterNumber}
             </span>

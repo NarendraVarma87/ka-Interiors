@@ -78,35 +78,45 @@ export function Header() {
           isVisible ? 'translate-y-0' : '-translate-y-full'
         } ${
           isTransparentHero
-            ? 'bg-transparent py-5 lg:py-6 text-alabaster'
-            : 'bg-ivory/90 backdrop-blur-md py-3.5 lg:py-4 text-ink shadow-[0_4px_30px_rgba(43,20,8,0.04)] border-b border-gold/15'
+            ? 'bg-transparent py-4 sm:py-5 lg:py-6 text-alabaster'
+            : 'bg-ivory/95 backdrop-blur-md py-2.5 sm:py-3.5 text-ink shadow-[0_4px_30px_rgba(43,20,8,0.06)] border-b border-gold/20'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo Brand Link */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 sm:gap-3.5 transition-transform duration-300 hover:scale-[1.01]"
+            className="group flex items-center gap-3 sm:gap-4 transition-transform duration-300 hover:scale-[1.01]"
             aria-label="KA Interiors Homepage"
           >
-            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full p-1 bg-espresso/80 border border-gold/40 flex items-center justify-center shadow-sm shrink-0">
-              <Image
-                src="/images/brand/ka-phoenix-monogram.png"
-                alt="KA Interiors Phoenix Monogram"
-                width={34}
-                height={34}
-                className="object-contain transition-transform duration-500 group-hover:rotate-6"
-                priority
-              />
+            {/* Prominent Glowing Monogram Badge */}
+            <div className="relative shrink-0">
+              {/* Luminous Gold Radial Halo */}
+              <div className="absolute -inset-1 sm:-inset-1.5 rounded-full bg-gradient-to-tr from-gold/70 via-gold/30 to-gold-light/60 blur-md opacity-80 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              
+              {/* Multi-Stop Metallic Gold Ring */}
+              <div className="relative w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-[0_4px_24px_rgba(201,149,60,0.4)] group-hover:shadow-[0_4px_32px_rgba(201,149,60,0.65)] transition-all duration-300">
+                <div className="w-full h-full rounded-full bg-espresso flex items-center justify-center p-1.5 sm:p-2 overflow-hidden">
+                  <Image
+                    src="/images/brand/ka-phoenix-monogram.png"
+                    alt="KA Interiors Phoenix Monogram"
+                    width={56}
+                    height={56}
+                    className="object-contain drop-shadow-[0_2px_8px_rgba(201,149,60,0.7)] transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <span className={`font-serif text-lg sm:text-2xl tracking-wider font-medium leading-none ${
-                isTransparentHero ? 'text-white' : 'text-ink'
+
+            <div className="flex flex-col justify-center">
+              <span className={`font-serif text-xl sm:text-2xl lg:text-[28px] tracking-wide font-medium leading-none ${
+                isTransparentHero ? 'text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]' : 'text-ink'
               }`}>
                 KA <span className="text-gold-gradient font-normal italic">Interiors</span>
               </span>
-              <span className={`text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-sans mt-0.5 ${
-                isTransparentHero ? 'text-champagne/80' : 'text-walnut/70'
+              <span className={`text-[9px] sm:text-[10px] uppercase tracking-[0.24em] sm:tracking-[0.28em] font-sans font-medium mt-1 ${
+                isTransparentHero ? 'text-champagne/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]' : 'text-walnut/80'
               }`}>
                 Vijayawada · Est. 30+ Yrs
               </span>
@@ -195,22 +205,27 @@ export function Header() {
           >
             {/* Top Bar inside Menu */}
             <div className="flex items-center justify-between border-b border-gold/15 pb-6">
-              <div className="flex items-center gap-3">
-                <div className="relative w-10 h-10 rounded-full bg-walnut border border-gold/40 flex items-center justify-center">
-                  <Image
-                    src="/images/brand/ka-phoenix-monogram.png"
-                    alt="KA Interiors Monogram"
-                    width={34}
-                    height={34}
-                    className="object-contain"
-                  />
+              <div className="flex items-center gap-3.5 sm:gap-4">
+                <div className="relative shrink-0">
+                  <div className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-gold/60 via-gold/30 to-gold-light/50 blur-md opacity-85 pointer-events-none" />
+                  <div className="relative w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-[0_4px_20px_rgba(201,149,60,0.45)]">
+                    <div className="w-full h-full rounded-full bg-espresso flex items-center justify-center p-2">
+                      <Image
+                        src="/images/brand/ka-phoenix-monogram.png"
+                        alt="KA Interiors Monogram"
+                        width={46}
+                        height={46}
+                        className="object-contain drop-shadow-[0_2px_8px_rgba(201,149,60,0.7)]"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <div className="font-serif text-xl tracking-wider text-white">
-                    KA <span className="text-gold-gradient italic">Interiors</span>
+                  <div className="font-serif text-2xl tracking-wide text-white font-medium">
+                    KA <span className="text-gold-gradient italic font-normal">Interiors</span>
                   </div>
-                  <div className="text-[10px] tracking-[0.25em] text-champagne/70 uppercase">
-                    Vijayawada
+                  <div className="text-[10px] sm:text-[11px] tracking-[0.28em] text-gold font-medium uppercase font-sans mt-0.5">
+                    Studio Vijayawada · 30+ Yrs
                   </div>
                 </div>
               </div>
